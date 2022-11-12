@@ -13,7 +13,7 @@ from .serializers import RasifalSerializer
 
 
 def rasifal_index(request):
-    return HttpResponse("Hello, world. You're at rasifal api home page")
+    return HttpResponse("This is a home page of rasifal api. Please visit /api/rasifal/ to get rasifal")
 
 
 def fetch_rasifal():

@@ -13,3 +13,4 @@ sqlparse==0.4.3
 urllib3==1.26.12
 yapf==0.32.0
 gunicorn
+whitenoise

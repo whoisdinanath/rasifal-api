@@ -20,6 +20,6 @@ from rasifal.views import RasifalList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('rasifal/', include('rasifal.urls')),
+    path('', include('rasifal.urls')),
     path('api/rasifal/', RasifalList.as_view(), name='api_raifal'),
 ]
