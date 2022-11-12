@@ -4,7 +4,7 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.generics import ListAPIView
-import datetime
+
 from django.utils import timezone
 
 from .models import Rasifal, Rasifal_Desc
@@ -13,7 +13,7 @@ from .serializers import RasifalSerializer
 
 
 def rasifal_index(request):
-    return HttpResponse("This is a home page of rasifal api. Please visit /api/rasifal/ to get rasifal")
+    return render(request, 'rasifal/home.html')
 
 
 def fetch_rasifal():

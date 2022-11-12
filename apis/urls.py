@@ -15,11 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+# import settings and static
+from django.conf import settings
+from django.conf.urls.static import static
 
-from rasifal.views import RasifalList
 
+name = 'apis'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('rasifal.urls')),
-    path('api/rasifal/', RasifalList.as_view(), name='api_raifal'),
+
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
