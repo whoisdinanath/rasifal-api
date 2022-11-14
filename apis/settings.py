@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-u!3qhd!qff7hgnqf2rh*(p$=kk6+$g(imhas%gq+1v_nnnvw)r
 DEBUG = False
 
 ALLOWED_HOSTS = ["nepal-api.onrender.com", "127.0.0.1",
-                 "localhost", "api.eduspotnp.com", "rasifal-api.eduspotnp.com"]
+                 "localhost", "api.rasifal.eduspotnp.com", "eduspotnp.com"]
 
 # Application definition
 
